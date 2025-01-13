@@ -39,7 +39,7 @@ if (users[user].banned === true) conn.reply(m.chat, `🚩 *No es necesario volve
 users[user].banned = true
 usr = m.sender.split('@')[0]     
 await conn.reply(m.chat, '✅ *Usuario baneado con éxito*', m, { mentions: [user] })   
-await conn.reply('5351524614@s.whatsapp.net', `🚩 El usuario *${nametag}* ha sido Baneado por *${nn}*.`, m, rcanal, );
+await conn.reply('5492355505090@s.whatsapp.net', `🚩 El usuario *${nametag}* ha sido Baneado por *${nn}*.`, m, rcanal, );
 }} catch (e) {
 await conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, rcanal, )
 console.log(e) 
@@ -50,6 +50,6 @@ handler.help = ['banuser <@tag> <razón>'];
 handler.command = ['banuser'];
 handler.tags = ['mods'];
 handler.rowner = true;
-handler.group = true;
+handler.group = false;
 
 export default handler
