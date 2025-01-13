@@ -16,12 +16,6 @@ const handler = async (m, { conn, text, args, usedPrefix, command }) => {
       const numeroAEliminar = who;
       const index = global.owner.findIndex(owner => owner[0] === numeroAEliminar);
       if (index !== -1) {
-        global.owner.splice(index, 1);
-        await conn.reply(m.chat, tradutor.texto3, m);
-      } else {
-        await conn.reply(m.chat, tradutor.texto4, m);
-      }
-      break;
   }
 };
 handler.command = /^(addowner|delowner)$/i;
